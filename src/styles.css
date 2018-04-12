@@ -3,3 +3,44 @@
 @tailwind components;
 
 @tailwind utilities;
+
+a {
+    @apply .text-blue-darker;
+    text-decoration: none;
+} 
+
+@responsive {
+    .menu-item {
+        @apply .flex .items-center .justify-center; 
+        @apply .h-full .w-full .border-l .border-r .whitespace-no-wrap;
+    }
+}
+
+@responsive {
+    .menu-item-link {
+        @apply .px-2 .font-medium;
+    }
+}
+
+@responsive {
+        .menu-item-link:hover {
+        @apply .px-2 .bg-grey-light;
+    }
+}
+
+.social-media-icon {
+    @apply .fill-current .text-blue-darker .w-8 .h-8;
+}
+
+.social-media-icon:hover {
+    @apply .text-blue;
+}
+
+.video-wrapper {
+    @apply .relative;
+    padding-bottom: 56.25%;
+}
+
+.video-frame {
+    @apply .absolute .w-full .h-full .pin-t .pin-l
+}
