@@ -21,17 +21,22 @@ a {
         @apply .px-2 .font-medium;
     }
 }
-
 @responsive {
-        .menu-item-link:hover {
+    .menu-item-link:hover {
         @apply .px-2 .bg-grey-light;
     }
+}
+
+.social-media-container {
+    @apply .flex .items-center .pr-2;
+}
+.social-media-container:last-child {
+    @apply .pr-0;
 }
 
 .social-media-icon {
     @apply .fill-current .text-blue-darker .w-8 .h-8;
 }
-
 .social-media-icon:hover {
     @apply .text-blue;
 }
@@ -44,3 +49,57 @@ a {
 .video-frame {
     @apply .absolute .w-full .h-full .pin-t .pin-l
 }
+
+@responsive {
+    .absolute-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@responsive {
+    .absolute-right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+.action-button {
+    transition: all .1s ease-in-out; 
+}
+
+.action-button:hover {
+    filter: drop-shadow(5px 10px 10px);
+    transform: scale(1.1);
+}
+
+.loader {
+    height: 4px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+  }
+  .loader:before{
+    display: block;
+    position: absolute;
+    content: "";
+    left: -200px;
+    width: 200px;
+    height: 4px;
+    background-color: #2980b9;
+    animation: loading 2s linear infinite;
+  }
+  
+  @keyframes loading {
+      from {left: -200px; width: 30%;}
+      50% {width: 30%;}
+      70% {width: 70%;}
+      80% { left: 50%;}
+      95% {left: 120%;}
+      to {left: 100%;}
+  }
