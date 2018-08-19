@@ -51,13 +51,14 @@ a {
 }
 
 
-.speaker-list {
-    @apply .flex .flex-wrap .justify-start;
+.speakers-list {
+    @apply .flex .flex-wrap .justify-center;
 }
 
 .speaker-card {
     @apply .w-64 .mx-1 .mb-4 .overflow-hidden .flex .flex-col .justify-around .items-center;
 }
+
 
 .speaker-name {
     @apply .text-blue-darker;
@@ -73,6 +74,24 @@ a {
     height: 128px;
     border: 4px solid rgba(17,17,17,0.1);
     border-radius: 50%;
+}
+
+
+
+.sponsors-list {
+    @apply .flex .flex-wrap .justify-around;
+}
+
+.sponsor-card {
+    @apply .bg-white .p-4 .w-64 .mx-1 .mb-4 .rounded-lg .shadow-md .overflow-hidden .flex .flex-col .justify-around .items-center;
+}
+
+.sponsor-description {
+    @apply .text-justify .text-blue-darker; 
+}
+
+.sponsor-img {
+    @apply .mb-2;
 }
 
 
