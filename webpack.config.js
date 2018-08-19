@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {
   entry: './index.js',
   output: {
-    path: path.resolve(__dirname, '../../../kandddinsky/kandddinsky/css'),
+    path: path.resolve(__dirname, '../../../kandddinsky/kandddinsky.com/css'),
     filename: 'styles.css',
   },
   module: {
