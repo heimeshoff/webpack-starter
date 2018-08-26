@@ -141,6 +141,43 @@ a {
 }
 
 
+
+.speaker-details-card {
+    @apply .fixed .bg-white .rounded .overflow-hidden .pt-8 .flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.speaker-details-profile {
+    @apply .flex .flex-col .items-center .flex-no-shrink .mx-2 .my-2;
+}
+
+.speaker-details-content {
+    @apply .flex .flex-col .items-center .justify-start .mb-2 .mx-2;
+}
+
+.speaker-details-img {
+    @apply .speaker-img
+}
+
+.speaker-details-name {
+    @apply .text-blue-darker;
+}
+
+.speaker-details-tagline {
+    @apply .text-blue-darker;
+}
+
+.speaker-details-description {
+    @apply .p-4 .max-w-sm .text-justify;
+}
+
+
+
+
+
+
 .action-button {
     transition: all .1s ease-in-out; 
 }
