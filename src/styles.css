@@ -215,11 +215,11 @@ a {
 }
 
 .workshop-profile {
-    @apply .flex .flex-col .items-center .flex-no-shrink .mx-2 .my-2;
+    @apply .flex .flex-col .items-center .flex-no-shrink .m-4;
 }
 
 .workshop-details {
-    @apply .flex .flex-col .items-center .justify-start .mx-2 .my-2;
+    @apply .flex .flex-col .items-center .justify-start .m-4;
 }
 
 .workshop-img {
@@ -235,7 +235,7 @@ a {
 }
 
 .workshop-description {
-    @apply .p-4 .max-w-sm;
+    @apply .p-4;
 }
 
 
@@ -304,3 +304,38 @@ a {
         transform: translate(0, -50%);
     }
 }
+
+.read-more-state {
+    display: none;
+  }
+  
+.read-more-target {
+    max-height: 5em;
+    transition: .25s ease;
+    overflow: hidden;
+  }
+  
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+  
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Read more';
+  }
+  
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+  }
+  
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+  }
