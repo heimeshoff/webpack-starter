@@ -99,8 +99,8 @@ a {
 
 .session-close {
     @apply .absolute .font-bold .text-2xl .cursor-pointer .bg-white .rounded-t-lg;
-    right: 30px; 
-    top: -35px;
+    right: 20px; 
+    top: 0px;
     padding: 4px;    
 }
 
@@ -110,7 +110,7 @@ a {
 
 
 .speaker-details-profile {
-    @apply .flex .flex-col .items-center .flex-no-shrink .my-2;
+    @apply .flex .flex-col .items-center .flex-no-shrink .mb-2 .mt-8;
 }
 
 .speaker-details-content {
@@ -144,15 +144,19 @@ a {
 }
 
 .session-info {
-    @apply .flex .flex-col .justify-center .items-center .w-3/4;
+    @apply .flex .flex-col .justify-center .items-center .w-3/4 .p-2;
 }
 
 .session-name {
     @apply .text-blue-darker;
 }
 
+.session-spacetime {
+    @apply .text-blue-darker;
+}
+
 .session-title {
-    @apply .m-2 .text-center .font-bold .text-blue-darker; 
+    @apply .m-2 .px-4 .text-center .font-bold .text-blue-darker .max-w-sm;
 }
 
 .session-img {
